@@ -1,11 +1,13 @@
 {
-  "name": "202304-w3ch3-luis-caballe",
+  "name": "202304-w3chwe-jordi-calles",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "build:dev": "tsc -w",
+    "test": "jest",
+    "test:dev": "jest -w",
     "prepare": "husky install"
   },
   "keywords": [],
