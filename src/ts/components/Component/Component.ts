@@ -1,4 +1,4 @@
-import type ComponentStructure from "../types.js";
+import type ComponentStructure from "../types";
 
 abstract class Component implements ComponentStructure {
   domElement: HTMLElement;
