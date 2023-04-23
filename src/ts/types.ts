@@ -1,12 +1,16 @@
+export interface PokemonTypeStructure {
+  slot: number;
+  type: Name;
+}
+
+export interface Name {
+  name: string;
+}
+
 export interface PokemonStructure {
   name: string;
   id: number;
-  types: {
-    slot: number;
-    type: {
-      name: string;
-    };
-  };
+  types: PokemonTypeStructure[];
   height: number;
   weight: number;
   sprites: {

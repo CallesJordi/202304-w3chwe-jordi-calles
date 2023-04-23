@@ -24,6 +24,8 @@ class PokemonCardComponent extends Component {
       <img src="${this.pokemonData.sprites.other["official-artwork"].front_default}" alt="${this.pokemonData.name}">
       <span>${this.pokemonData.id}</span>
       <h2>${this.pokemonData.name}</h2>
+      <ul class="pokemon-Card-list">
+      <span class ="pokemon-Card-label">Type:</span>${this.pokemonData.types[0].type.name} </ul>
     </div>
     `;
   }
