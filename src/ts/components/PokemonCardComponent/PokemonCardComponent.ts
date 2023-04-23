@@ -1,20 +1,19 @@
-import { type PokemonStructure } from "../../types.js";
+import { type PokemonStructure } from "../../types";
 import Component from "../Component/Component.js";
-
-const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
 class PokemonCardComponent extends Component {
   private pokemonData: PokemonStructure;
 
-  constructor(parentElement: HTMLElement) {
+  constructor(parentElement: HTMLElement, private readonly url: string) {
     super(parentElement, "card", "li");
     (async () => this.getPokemonCard())();
   }
 
   getPokemonCard = async (): Promise<void> => {
-    const response = await fetch(`${apiUrl}1`);
+    const response = await fetch(this.url);
 
     const pokemonData = (await response.json()) as PokemonStructure;
+
     this.pokemonData = pokemonData;
     this.renderHtml();
   };
