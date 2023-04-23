@@ -17,3 +17,11 @@ export interface PokemonStructure {
     };
   };
 }
+
+export interface PokemonsUrl {
+  url: string;
+}
+
+export interface PokemonListStructure {
+  results: PokemonsUrl[];
+}
