@@ -1,4 +1,4 @@
-interface ComponentStructure {
+export interface ComponentStructure {
   domElement: HTMLElement;
   renderHtml: () => void;
   addListeners?: () => void;
