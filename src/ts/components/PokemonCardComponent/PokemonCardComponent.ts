@@ -22,7 +22,7 @@ class PokemonCardComponent extends Component {
   renderHtml(): void {
     this.domElement.innerHTML = `
     <div class = "pokemon-Card">
-      <img src="${this.pokemonData.sprites.other["official-artwork"].front_default}">
+      <img src="${this.pokemonData.sprites.other["official-artwork"].front_default}" alt="${this.pokemonData.name}">
       <span>${this.pokemonData.id}</span>
       <h2>${this.pokemonData.name}</h2>
     </div>
